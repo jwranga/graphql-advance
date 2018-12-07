@@ -100,10 +100,11 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                'signUp' => \App\GraphQL\Mutation\SignUpMutation::class,
+                'getMe' => \App\GraphQL\Query\GetMe::class,
             ],
             'mutation' => [
                 'signUp' => \App\GraphQL\Mutation\SignUpMutation::class,
+                'logIn' => \App\GraphQL\Mutation\LogInMutation::class,
             ],
             'middleware' => [],
             'method' => ['get', 'post'],

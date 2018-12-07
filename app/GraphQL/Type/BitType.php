@@ -20,11 +20,11 @@ class BitType extends GraphQLType {
                 'description' => 'The id of bit'
             ],
             'user' => [
-                'type' => Type::notNull(\GraphQL::type('User')),
+                'type' => Type::nonNull(\GraphQL::type('User')),
                 'description' => 'The user that posted a bit'
             ],
             'snippet' => [
-                'type' => Type::notNull(Type::int()),
+                'type' => Type::nonNull(Type::int()),
                 'description' => 'the code bit'
             ],
             'created_at' => [

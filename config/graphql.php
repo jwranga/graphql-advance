@@ -101,6 +101,7 @@ return [
         'default' => [
             'query' => [
                 'getMe' => \App\GraphQL\Query\GetMe::class,
+                'allBits' => \App\GraphQL\Query\AllBitsQuery::class,
             ],
             'mutation' => [
                 'signUp' => \App\GraphQL\Mutation\SignUpMutation::class,

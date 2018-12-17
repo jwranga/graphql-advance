@@ -105,6 +105,7 @@ return [
             'mutation' => [
                 'signUp' => \App\GraphQL\Mutation\SignUpMutation::class,
                 'logIn' => \App\GraphQL\Mutation\LogInMutation::class,
+                'NewBit' => \App\GraphQL\Mutation\NewBitMutation::class,
             ],
             'middleware' => [],
             'method' => ['get', 'post'],
